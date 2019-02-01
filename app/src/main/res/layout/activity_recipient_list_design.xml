@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_row_background"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/recipient_list_design_countryflag"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_european_union"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/recipient_list_design_recptname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/recipient_list_design_countryflag"
+            android:layout_toEndOf="@id/recipient_list_design_countryflag"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="Ghana"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/recipient_list_design_recptCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recipient_list_design_recptname"
+            android:layout_toRightOf="@id/recipient_list_design_countryflag"
+            android:layout_toEndOf="@id/recipient_list_design_countryflag"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="Ghana"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="android:fontFamily">@font/mtn_brighter_sans_medium</item>
+
+        <item name="windowActionBarOverlay">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+    <style name="EditTextStyle" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/gray</item>
+    </style>
+
+    <style name="EditTextStyleYellow" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="InputButtonStyle" parent="AppTheme">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/header_gray</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="LandingMessage" parent="@style/AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LandingTitle" parent="@style/AppTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <dimen name="dimen_45sp">45sp</dimen>
+    <dimen name="dimen_65sp">65sp</dimen>
+
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/mtn_brighter_sans_medium</item>
+
+    </style>
+
+    <style name="AppTheme2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="transTheme" parent="AppTheme2">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

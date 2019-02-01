@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFCC00</color>
+    <color name="colorPrimaryDark">#FFCC00</color>
+    <color name="colorAccent">#FFCC00</color>
+
+
+
+    <color name="danger_red">#FF0000</color>
+
+    <color name="colorPrimary2">#008577</color>
+    <color name="colorPrimaryDark2">#00574B</color>
+
+    <color name="yellow">#FFCC00</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="red">#ec1414</color>
+
+    <color name="brown">#909777</color>
+    <color name="gray">#484747</color>
+
+    <color name="light">#E5E5E5</color>
+
+    <color name="blue_activated">#027FA3</color>
+    <color name="blue_disabled">#81BFD1</color>
+    <color name="blue_deactivated">#027FA3</color>
+    <color name="blue_pressed">#015E78</color>
+    <color name="resend_otp_blue">#027FA3</color>
+
+    <color name="header_gray">#4C4C4C</color>
+    <color name="otp_gray">#A1AEB7</color>
+
+    <color name="yellow_pressed">#FFF4C7</color>
+    <color name="bg_row_background">#fa315b</color>
+
+</resources>

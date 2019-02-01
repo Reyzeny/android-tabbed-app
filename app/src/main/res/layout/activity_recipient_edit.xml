@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+    <include android:id="@+id/recipient_edit_toolbar" layout="@layout/app_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipient_edit_toolbar"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:baselineAligned="false">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/header_gray">
+
+                    <EditText
+                        android:id="@+id/recipient_details_edtFirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First name"
+                        android:nextFocusForward="@id/recipient_details_edtLastname"
+                        android:inputType="textCapWords|textNoSuggestions" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/header_gray">
+
+                    <EditText
+                        android:id="@+id/recipient_details_edtLastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last name"
+                        android:inputType="textCapWords|textFilter" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/header_gray">
+
+                <EditText
+                    android:id="@+id/recipient_details_edtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:inputType="textCapWords|textFilter|textNoSuggestions"
+                    android:imeOptions="actionDone"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/header_gray">
+
+                <EditText
+                    android:id="@+id/recipient_details_edtCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Country"
+                    android:inputType="textCapWords"
+                    android:textIsSelectable="false"
+                    android:freezesText="true"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/header_gray">
+
+                <EditText
+                    android:id="@+id/recipient_details_edtCountr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Number"
+                    android:inputType="textCapWords"
+                    android:textIsSelectable="false"
+                    android:freezesText="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/header_gray">
+
+                <EditText
+                    android:id="@+id/recipient_details_edtCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textIsSelectable="false"
+                    android:freezesText="true"
+                    android:enabled="false"
+                    android:text="Delete recipient"
+                    android:textColor="@color/blue_activated"
+                    android:textStyle="bold"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/recipient_detail_btnAirtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/blue_button_effect"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
